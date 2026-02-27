@@ -1,0 +1,6 @@
+@LabConnect.Api_HostAddress = http://localhost:5193
+
+GET {{LabConnect.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

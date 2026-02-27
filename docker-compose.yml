@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: labconnect-postgres
+    environment:
+      POSTGRES_DB: labconnect
+      POSTGRES_USER: labconnect
+      POSTGRES_PASSWORD: labconnect
+    ports:
+      - "5432:5432"
+    volumes:
+      - labconnect_pg:/var/lib/postgresql/data
+
+volumes:
+  labconnect_pg:
